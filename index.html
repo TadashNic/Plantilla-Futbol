@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla 11 Jugadores</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <!-- pitch-overlay: image + overlay where player elements are absolutely positioned over the cancha -->
+        <div id="pitch" class="pitch">
+          <div class="img-wrap">
+            <img id="pitchImg" src="./Imagenes/cANCHA.jpg" alt="cancha" />
+            <div id="players" class="players-overlay"></div>
+          </div>
+        </div>
+
+        <!-- semantic sections kept for accessibility / fallback -->
+        <section id="DELANTEROS" aria-label="Delanteros"></section>
+        <section id="MEDIOCAMPISTAS" aria-label="Mediocampistas"></section>
+        <section id="DEFENSAS" aria-label="Defensas"></section>
+        <section id="PORTERO" aria-label="Portero"></section>
+      </div>
+      <aside class="sidebar">
+        <div class="formation-controls">
+          <label for="formation">Formación:</label>
+          <select id="formation">
+            <option value="4-3-3">4-3-3</option>
+            <option value="4-4-2">4-4-2</option>
+            <option value="5-3-2">5-3-2</option>
+          </select>
+          <button id="applyFormation">Aplicar</button>
+        </div>
+
+        <section id="CAMBIOS" aria-label="Cambios"></section>
+      </aside>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
